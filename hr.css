@@ -19,13 +19,6 @@ html {
 a {
 	text-decoration: none;
 }
-.home {
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
 .section-title {
 	font-size: 4rem;
@@ -88,18 +81,6 @@ a {
 	padding: 20px;
 	display: block;
 }
-.nav-list  img{
-	width: 10%;
-	position: absolute;
-	top: -60%;
-	left: 5%;
-
-}
-.organize{
-	border: 1px transparent;
-	background-color: rgb(39, 207, 207);
-	border-radius: 50px;
-}
 #header .nav-list ul a::after {
 	content: attr(data-after);
 	position: absolute;
@@ -121,7 +102,7 @@ a {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
-	border: 3px solid rgb(17, 7, 7);
+	border: 3px solid white;
 	border-radius: 50%;
 	position: relative;
 	display: flex;
@@ -138,14 +119,14 @@ a {
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
-	border: 3px solid rgb(19, 17, 17);
+	border: 3px solid white;
 	animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
-	background-color:black;
+	background-color: white;
 	z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -155,11 +136,11 @@ a {
 	height: 100%;
 	width: 100%;
 	left: 0;
-	background-color: rgb(15, 3, 3);
+	background-color: white;
 	transition: .3s ease;
 	transition-property: top, bottom;
 }
-#header .hamburger .bar::after {
+/* #header .hamburger .bar::after {
 	top: 8px;
 }
 #header .hamburger .bar::before {
@@ -170,39 +151,18 @@ a {
 }
 #header .hamburger.active .bar::after {
 	top: 0;
+} */
+.nav-list  img{
+	width: 10%;
+	position: absolute;
+	top: -58%;
+	left: 5%;
 }
 
-/* frame */
-@keyframes hamburger_puls {
-	0% {
-		opacity: 1;
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(1.4);
-	}
-}
-@keyframes text_reveal_box {
-	50% {
-		width: 100%;
-		left: 0;
-	}
-	100% {
-		width: 0;
-		left: 100%;
-	}
-}
-@keyframes text_reveal {
-	100% {
-		color: white;
-	}
-}
-@keyframes text_reveal_name {
-	100% {
-		color: crimson;
-		font-weight: 500;
-	}
+.organize{
+	border: 1px transparent;
+	background-color: rgb(39, 207, 207);
+	border-radius: 50px;
 }
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
@@ -227,10 +187,8 @@ a {
 		display: none;
 	}
 }
+/* homepage section */
 
-
-/* End Header section */
-/* Hero Section */
 .hero .landing{
 	width: 100%;
 	height: 100vh;
@@ -243,7 +201,8 @@ a {
 .landing-title{
 	position: absolute;
 	bottom: 30%;
-	left: 5%;
+	left: 29%;
+	margin-top: 20%;
 }
 .landing-title p{
 	font-size: 45px;
@@ -251,12 +210,14 @@ a {
 	font-weight: normal;
 	font-weight: normal;
 	margin-left: -60px;
+	margin-bottom: 20%;
 }
 .landing-title b{
 	color: #ffff;
-	font-size: 70px;
-	/* font-weight: 800; */
-	font-weight: bold;
+	font-size: 30px;
+	top: 2%;
+	margin-top: 30%;
+
 }
 #demo-button{
 	border-radius: 20px;
@@ -266,249 +227,84 @@ a {
 	color: #ffff;
 	font-weight: 700;
 	font-size: 20px;
+	margin-left: 9%;
 }
 #demo-button:hover{
-	background-color: #00AEAE;
+    background-color: aliceblue;
 }
-.connected{
+/* .connected h2{
+	color: white;
+
+	font-size: 40px;
+	text-align: center;
+} */
+
+.build{
 	position: absolute;
-	top: 80%;
+	top: 70%;
 	height: 40vh;
 	width: 100%;
-	background-image: url(images/Mzizi\ Background\ 1.png);
+	background-color: #00AEAE ;
 	z-index: 1;
-
-}
-.connected h2{
-	background: -webkit-linear-gradient(#B9D239, #00AEAE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-	font-size: 60px;
-	text-align: center;
-}
-.teams{
-	margin-top: 10%;
-	
-}
-.teams h1{
-	font-size: 50px;
-	padding-top: 40px;
-	padding-bottom: 20px;
-	color: #00AEAE;
-	text-align: center;
-}
-.cards{
-	display: flex;
-	justify-content: space-around;
-	margin-left: 15%;
-	width: 70%;
-
-}
-.engineer {
-	position: relative;
-	max-width: 800px;
-	margin: 0 auto;
-	margin: 2%;
-  }
- 
-  .engineer .engineer-text {
-	position: absolute;
-	bottom: 1%;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 174, 174, 0.6);
-	color: #f1f1f1;
-	width: 100%;
-	padding: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	left: 2%;
-  }
-  .engineer-text h2{
-	  text-align: center;
-	  font-size: 25px;
-  }
-  .cards img{
-	border-radius: 20px;
-	margin-left: 2%;
-	
-  }
-  .teachers {
-	position: relative;
-	max-width: 800px; 
-	margin: 0 auto;
-	margin: 2%;
-  }
- 
-  .teachers .teachers-text {
-	position: absolute; 
-	bottom:1%; 
-	background: rgb(0, 0, 0); 
-	background: rgba(0, 174, 174, 0.6); 
-	color: #f1f1f1; 
-	width: 100%; 
-	padding: 20px; 
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	left: 2%;
-  }
-  .teachers-text h2{
-	text-align: center;
-	font-size: 25px;
-}
-  .employees {
-	position: relative;
-	max-width: 800px; 
-	margin: 0 auto; 
-	margin: 2%;
-  }
-
-  .employees .employees-text {
-	position: absolute; 
-	bottom:1%;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 174, 174, 0.6);
-	color: #f1f1f1;
-	width: 100%;
-	padding: 20px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	left: 2%;
-
-  }
-  .employees-text h2{
-	text-align: center;
-	font-size: 25px;
-}
-#demo-button2{
-	border-radius: 20px;
-	padding: 10px;
-	border:1px solid #00AEAE;
-	background-color: transparent;
-	color: #00AEAE;
-	font-size: 20px;
-	margin-left: 43%;
-	margin-top: 2%;
-}
-#demo-button2:hover{
-	background-color:#00AEAE ;
-}
-
-.mzizi-hr{
-	margin-top: 10%;
-	height: 50vh;
-	background-color: rgb(39, 207, 207);
-	display: flex;
-
-}
-.hr-text{
-	margin-top: 5%;
-	width: 50%;
-	margin-left: 5%;
-}
-.hr-text p{
-	font-size: 40px;
-	color: #ffff;
-	
-}
-.hr-image img{
-	width: 70%;
-	height: 85%;
-	border-radius: 20px;
-	margin: 5% 0;
-}
-.hr-image{
-	width: 40%;
-}
-.hr-text button{
-	border-radius: 15px;
-	padding: 10px 30px;
-	border: 1px solid #ffff;
-	background-color: transparent;
-	color: #ffff;
-	margin-top: 2%;
-}
-.hr-text button:hover{
-	background-color:#ffff ;
-}
-.build{
-	margin-left: 25%;
-	margin-top: 2%;
-	width: 50%;
-	/* flex-direction: column; */
-	
 }
 .build img{
 	width: 20%;
 	margin-left: 40%;
 }.build h2{
-	font-size: 50px;
+	font-size: 20px;
 	text-align: center;
-	background: -webkit-linear-gradient(#B9D239, #00AEAE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 	font-weight: 900;
 }
 .build p{
-	font-size: 20px;
+	font-size: 30px;
 	color: #00AEAE;
 	text-align: center;
+	font-weight: n;
+	color: white;
 }
-.management{
+.staff-management{
 	display: flex;
 	justify-content: space-around;
 	width: 70%;
 	margin-top: 5%;
 	margin-left: 20%;
 }
-.management h2{
-	color: #00AEAE;
+.staff-management h2{
+	color: #00AEAE; 
+	color: white; 
 }
-.privacy-text button{
-	margin-left: 40%;
-	border-radius: 15px;
-	padding: 10px 30px;
-	border: 1px solid #00AEAE;
-	background-color: transparent;
-	color: #00AEAE;
-	margin-top: 2%;
-}
-.privacy-text button:hover{
-	background-color:#00AEAE;
-}
-
-
-.newsletter {
-	margin-left: 25%;
+.magazine {
+	margin-left: 30%;
 	width: 50%;
-	margin-top: 5%;
-
-	
+	margin-top: 13%;
 	
 }
-.newsletter p{
+.magazine p{
 	text-align: center;
 	color: #BBD338;
-	font-size: 28px;
+	font-size: 25px;
 	font-weight: 600;
 }
-.newsletter input{
+.magazine input{
 	margin-left: 28%;
 	margin-top: 2%;
 	border: transparent;
 	background-color: #00AEAE;
-	padding: 10px;
-	
+	padding: 14px;
+
 }
 
-.newsletter input::placeholder{
+.magazine input::placeholder{
 	color: #BBD338;
 }
-.newsletter button{
+.magazine button{
 	border: transparent;
 	background-color: #BBD338;
 	padding: 10px 30px;
 	color: #00AEAE;
+	
 }
+/* footer section */
 footer{
 	display: flex;
 	justify-content: space-evenly;
@@ -533,12 +329,11 @@ footer h2{
 }
 
 footer .app{
-
 	text-decoration: none;
 	color: #00AEAE;
-	height: 19px;
-	background-color:#BBD338 ;
-	padding: 3px;
+	background-color: #BBD338;
+	height: 20px;
+	padding: 2px;
 	font-weight: 700;
 }
 
@@ -547,11 +342,11 @@ footer .app{
 	color: #00AEAE;
 	background-color: #BBD338;
 	font-size: 16px;
-	padding: 10px 
+	padding: 10px 0;
 
 }
 
-/* social media icon */
+
 .social-icon {
 	display: flex;
 	margin-bottom: 30px;
@@ -578,6 +373,7 @@ footer .app{
 	color: #BBD338;
 	
 }
+/* media quary section */
 @media only screen and (max-width: 842px){
 	.hero .landing{
 		width: 100%;
@@ -590,62 +386,13 @@ footer .app{
 	.connected h2{
 		font-size: 25px;
 	}
-	.teams h1{
-		font-size: 30px;
-	}
-	 .cards{
-		margin-left: 24%;
-		width: 50%;
-		flex-direction: column;
-	} 
-	
-	  .engineer .engineer-text {
-		left: 2%;
-		
-	  }
-	  .engineer-text h2{
-		  font-size: 13px;
-	  }
-	 
-	  .teachers .teachers-text {
-		padding: 15px;
-	  }
-	  .teachers-text h2{
-		font-size: 13px;
-	}
-	 
-	  .employees .employees-text {
-		padding: 15px;
-	
-	  }
-	  .employees-text h2{
-		font-size: 13px;
-	}
-	#demo-button2{
-		margin-left: 23%;
-	}
-	.mzizi-hr{
-		height: 30vh;	
-	}
-	.hr-text p{
-		font-size: 20px;
-	}
-	.hr-image img{
-		width: 90%;
-		height: 85%;
-	}
 	.build{
 		margin-left: 25%;
 		margin-top: 2%;
 		width: 50%;
-		
-		
 	}
-	.build img{
-		width: 20%;
-		
-
-	}.build h2{
+	
+	.build h2{
 		font-size: 20px;
 	}
 	.build p{
@@ -658,27 +405,24 @@ footer .app{
 		flex-direction: column;
 	}
 	.management h2{
-		font-size: 20px;
+		font-size: 10px;
 	}
-	.privacy-text button{
-		margin-left: 20%;
-	}
-	.newsletter {
-		
-		margin-left: 3%;
-		width: 50%;
-		margin-top: 5%;
-		font-size: 20%;
+	
+	.magazine {
+		margin-left: 0%;
+	width: 50%;
+	margin-top: 5%;
 		
 	}
-	.newsletter input{
-		margin-left: 10%;
+	.magazine input{
+		margin-left: 0%;
 		margin-bottom: 2%;
 		
 	}
 	footer{
-        flex-direction: column;
-        margin-left: 5%;
+		flex-direction: column;
+	    margin-left: 5%;
+		
 	}
 	footer img{
 		width: 15%;
@@ -686,28 +430,26 @@ footer .app{
 	}
 	footer p{
 		color: #BCD237;
-		font-size: 20px;
+		font-size: 24px;
 	}
 	footer h2{
 		color: #00AEAE;
-		font-size: 20px;
+		font-size: 24px;
 	}
-    .contact p{
+	
+	footer .app{
+		height: 20px;
+		padding: 0px;
+		font-size: 8px;
+	}
+	.contact p{
 		text-align: left;
 	}
 	.contact h2{
 		text-align: left;
 	}
 	
-	footer .app{
-			height: 20px;
-			padding: 10px;
-			font-size: 8px;
-			margin: 4%;
-		}
-        
-	
-    .social-icon {
+	.social-icon {
 		display: flex;
 		margin-left: 0%;
 		margin-top: 2%;
@@ -722,8 +464,5 @@ footer .app{
 	#right{
 		font-size: 10px;
 	
-	}
-
-	
-	
+	}	
 }
