@@ -3,42 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/eab9a2f540.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="demo.css">
   <title>Demo section</title>
 </head>
 <body>
-  <!-- Header -->
-
-   <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-        </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div> 
-          <img src="images/MZIZI-HR Logo.png" alt="hr-logo">
-           <ul> 
-            <li><a href="https://mzizi.co.ke/index.html" data-after="Home">Home</a></li>
-            <li><a href="https://mzizi.co.ke/mods.html" data-after="Mzizi Features">Mzizi Features</a></li>
-            <li><a href="https://mzizi.co.ke/pricing.html" data-after="Pricing">Pricing</a></li>
-            <li><a href="https://mzizi.co.ke/learn.html" data-after="Mzizi E-learning">Mzizi E-learning</a></li>
-            <div class="dropdown">
-              <button class="dropbtn">Dropdown 
-                <i class="fa fa-arrow-down"></i>
-              </button>
-          <div class="dropdown-content">
-           <a href="https://mzizi.co.ke/downloads/Mzizi%20School%20Management%20ERP%20Brief%20Writeup.pdf">Mzizi product brief</a>
-            <a href="https://mzizi.co.ke/downloads/Mzizi%20Letterhead%20and%20Proposal.pdf">Mzizi ERP value proposal</a>
-          </div>
-          </div>
-          </ul> 
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="imagees/mzizilogo.png" alt="">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" id="mzizi-development">
+          <li class="nav-item">
+            <a class="nav-link";href="https://mzizi.co.ke/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mzizi.co.ke/mods.html">Miziz Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mzizi.co.ke/pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mzizi.co.ke/learn.html">Mzizi E-Learning</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://mzizi.co.ke/downloads/Mzizi%20School%20Management%20ERP%20Brief%20Writeup.pdf">Mzizi product brief</a></li>
+              <li><a class="dropdown-item" href="https://mzizi.co.ke/downloads/Mzizi%20Letterhead%20and%20Proposal.pdf">Mzizi ERP value proposal</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
-  
+  </nav>
   <div class="containers">
     <h3>Organize for<br> Demo</h3>
     <div class="form-image">
@@ -55,7 +61,6 @@
     </div>
     </div>
   </div>
-  <!-- icon section -->
 <footer>
   <div class="about">
 <a href="#" class="app" style="font-size: 15px;">GET THE MZIZI APP</a>
