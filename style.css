@@ -5,12 +5,13 @@ li.nav-item a {
   }
   #mzizi-erp{
 	  margin-left: 25%;
-	  padding-left: 20%;
+	  padding-left: 18%;
 	  top: 0px;
 	  align-items: center;
 	  justify-content: center;
 	  margin: 3 !important;
 	  position: fixed;
+	  width: 70%;
 
 }
   
@@ -32,7 +33,7 @@ li.nav-item a {
 	text-decoration: none;
 }
 .container-fluid{
-	margin-top: 3%!important;
+	margin-top: 2%!important;
 }
 
 .hero .landing{
@@ -228,7 +229,7 @@ li.nav-item a {
 	border: 1px solid #ffff;
 	background-color: transparent;
 	color: #ffff;
-	margin-top: 2%;
+	margin-top: 3%;
 }
 .hr-text button:hover{
 	background-color:#ffff ;
@@ -378,6 +379,10 @@ footer .app{
 }
 
 @media only screen and (max-width: 842px){
+	.hr-text button{
+		margin-bottom: 1%;
+		padding: 2%;
+	}
 	.container-fluid  .organize{
 		padding: 10px;
 		font-size: 9px;
