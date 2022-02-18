@@ -38,11 +38,14 @@ li.nav-item a {
 	top: 1%;
 	
 }
-.container-fluid{
+/* .container-fluid{
 	margin-top: 32px !important;
-}
+} */
 .organize a{
 	text-decoration: none;
+}
+.container-fluid{
+	margin-top: 38px!important;
 }
 
 

@@ -10,7 +10,7 @@ li.nav-item a {
 	font-size: 20px;
 	position: fixed;
 	justify-content: center;
-	top: 1%;
+	top: 2%;
 	
 
 }
@@ -38,12 +38,17 @@ li.nav-item a {
 	top: 1%;
 	
 }
-.container-fluid{
-	margin-top: 33px !important;
-	     
-}
 .organize a{
 	text-decoration: none;
+}
+
+.development{
+	background-color: rgb(39, 207, 207);
+	margin-top: -29%;
+	display: flex;
+}
+.container-fluid{
+	margin-top: 38px!important;
 }
 
 .hero .landing{
@@ -389,10 +394,6 @@ footer .app{
 }
 
 @media only screen and (max-width: 842px){
-	.container-fluid{
-		margin-top: 30px !important;
-			 
-	}
 	#mzizi-school{
 		background-color: white;
 	}
