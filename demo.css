@@ -45,6 +45,7 @@ input[type=text],input[type=date] ,select, textarea {
 	padding: 30px;
 	height: 50px;
 	width: 150px;
+	top: 1%;
   }
   .containers {
 	margin-top: 5%;
