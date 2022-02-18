@@ -1,8 +1,4 @@
 
-/* .nav-item li a{
-	margin-left: 190px !important;
-
-} */
 li.nav-item a {
 	color: #00AEAE !important;
 	font-size: 25px !important;
@@ -14,23 +10,29 @@ li.nav-item a {
 	  align-items: center;
 	  justify-content: center;
 	  margin: 3 !important;
+	  position: fixed;
 
 }
   
 .container-fluid img{
 	width: 10% !important;
 	position: absolute !important;
-	margin-top: -1% !important;
+	margin-top: -2% !important;
 	left: 3% !important;
 	font-size: 20px !important;
 }
 .container-fluid  .organize{
+	border: 1px transparent !important;
 	background-color: rgb(39, 207, 207) !important;
-	border-radius: 50px !important;
+	border-radius: 40px !important;
 	padding: 15px !important;
-	outline: none !important;
-	text-decoration-line: none !important;
-	font-size: 25px;
+	font-size: 20px;
+}
+.organize a{
+	text-decoration: none;
+}
+.container-fluid{
+	margin-top: 3%!important;
 }
 
 .hero .landing{
@@ -376,6 +378,11 @@ footer .app{
 }
 
 @media only screen and (max-width: 842px){
+	.container-fluid  .organize{
+		padding: 10px;
+		font-size: 9px;
+		
+	}
 	#mzizi-erp{
 		margin-right: 20%;
 	}
@@ -506,8 +513,6 @@ footer .app{
 			margin: 4%;
 			
 		}
-        
-	
     .social-icon {
 		display: flex;
 		margin-left: 0%;

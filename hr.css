@@ -1,25 +1,28 @@
 
-.nav-item li a{
-	margin-left: 190px !important;
-
-}
 li.nav-item a {
 	display: inline !important;
 	color: #00AEAE !important;
-	font-size: 20px !important;
+	font-size: 24px !important;
+	
+	
   }
   #mzizi-erp{
 	  margin-left: 25%;
 	  padding-left: 20%;
-	  top: 0px;
+	  top: 0%;
 	  align-items: center;
 	  justify-content: center;
 	  margin: 3 !important;
-	  /* position: fixed;	   */
+	  position: fixed;
+
 }
-/* .container-fluid header{
-	font-size: 40px;
-} */
+/* .navbar-nav li{
+	padding-right:2%; 
+	 margin-left:2%;
+	margin-right:2%;
+  } */
+
+
   
 .container-fluid img{
 	width: 10% !important;
@@ -31,10 +34,16 @@ li.nav-item a {
 .container-fluid  .organize{
 	border: 1px transparent !important;
 	background-color: rgb(39, 207, 207) !important;
-	border-radius: 50px !important;
+	border-radius: 40px !important;
 	padding: 15px !important;
-	outline: none !important;
-	text-decoration-line: none;
+	font-size: 20px;
+	
+}
+.container-fluid{
+	margin-top: 36px !important;
+}
+.organize a{
+	text-decoration: none;
 }
 
 
@@ -56,7 +65,6 @@ li.nav-item a {
 .landing-title p{
 	font-size: 45px;
 	color: #ffff;
-	font-weight: normal;
 	font-weight: normal;
 	margin-left: -60px;
 	margin-bottom: 20%;
@@ -98,7 +106,6 @@ li.nav-item a {
 }.build h2{
 	font-size: 20px;
 	text-align: center;
-	/* font-weight: 900; */
 }
 .build p{
 	font-size: 30px;
@@ -149,11 +156,14 @@ li.nav-item a {
 	color: #00AEAE;
 	
 }
-/* footer section */
 footer{
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 5%;
+
+
+
+
 }
 footer img{
 	width: 10%;
@@ -180,12 +190,7 @@ footer .app{
 	height: 19px;
 	padding: 3px;
 	font-weight: 700;
-	/* text-decoration: none;
-	color: #00AEAE;
-	background-color: #BBD338;
-	height: 20px;
-	padding: 2px;
-	font-weight: 700; */
+
 }
 
 #right{
@@ -224,13 +229,13 @@ footer .app{
 	color: #BBD338;
 	
 }
-/* media quary section */
 @media only screen and (max-width: 842px){
 	#mzizi-erp{
 		background-color: white;
 
 
 	}
+	
 	.hero .landing{
 		width: 100%;
 		height: 80vh;
@@ -250,11 +255,6 @@ footer .app{
 	.build{
 		height: 30vh;
 	width: 100%;
-
-	
-		/* margin-left: 25%;
-		margin-top: 2%;
-		width: 50%; */
 	}
 	
 	.build h2{
@@ -307,9 +307,7 @@ footer .app{
 		padding: 2px;
 		font-size: 10px;
 		margin: 4%;
-		/* height: 20px;
-		padding: 0px;
-		font-size: 8px; */
+
 	}
 	.contact p{
 		text-align: left;
