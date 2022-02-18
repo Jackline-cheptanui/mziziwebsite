@@ -188,6 +188,10 @@ footer .app{
 }
 
 @media only screen and (max-width: 842px){
+	.container-fluid{
+		margin-top: 29px !important;
+	}
+	
 	#home-mzizi{
 		background-color: white;
 	}
