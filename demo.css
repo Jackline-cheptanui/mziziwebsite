@@ -77,10 +77,10 @@ input[type=text],input[type=date] ,select, textarea {
 	  color: #00AEAE;
   }
   @media only screen and (max-width: 850px){
-	#mzizi-development{
+	/* #mzizi-development{
 		background-color:white;
 		
-	}
+	} */
 	  .form-image
 	  {
 		  flex-direction: column ;
